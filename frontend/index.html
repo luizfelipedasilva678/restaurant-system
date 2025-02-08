@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/restaurant-table-and-chairs.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <title>Restaurante La Saveur</title>
+  </head>
+  <body>
+    <header class="section has-background-light p-0">
+      <div class="is-flex is-align-items-center container p-5">
+        <button class="menu__trigger" data-testid="menu">
+          <span class="menu__trigger--line"></span>
+          <span class="menu__trigger--line"></span>
+          <span class="menu__trigger--line"></span>
+        </button>
+
+        <h1 class="title is-size-3-desktop is-size-4-mobile has-text-left">
+          Restaurante La Saveur
+        </h1>
+      </div>
+    </header>
+    <section>
+      <div class="is-flex is-align-items-start container p-5" id="nav-info">
+        <p class="title menu__header--user-info"></p>
+      </div>
+    </section>
+
+    <main class="main__content">
+      <div class="container pl-5 pr-5" id="app"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="content">
+        <p class="has-text-centered">©Restaurante La Saveur</p>
+      </div>
+    </footer>
+
+    <aside class="menu">
+      <div class="menu__header">
+        <div class="menu__header--actions">
+          <button class="menu__close--button">✖</button>
+        </div>
+      </div>
+      <div class="menu__content">
+        <ul class="is-flex is-flex-direction-column">
+          <li class="mb-3">
+            <a class="button is-white" href="/" data-router-link
+              >Listagem de reservas</a
+            >
+          </li>
+          <li class="mb-3">
+            <a
+              class="button is-white"
+              href="/register/reservation"
+              data-router-link
+              >Cadastro de reservas</a
+            >
+          </li>
+          <li class="mb-3">
+            <a
+              class="button is-white"
+              href="/reservations/report"
+              data-router-link
+              >Relatório de reservas</a
+            >
+          </li>
+          <li class="mb-3">
+            <a
+              class="button is-white"
+              href="/tables-being-attended"
+              data-router-link
+              >Mesas sendo antendidas</a
+            >
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="menu__overlay"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

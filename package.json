@@ -1,0 +1,34 @@
+{
+  "name": "g1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:backend": "cd backend && composer run-script test",
+    "lint:backend": "cd backend && composer run-script lint",
+    "cov:backend": "cd backend && composer run-script cov",
+    "format:backend": "cd backend && composer run-script format",
+    "test:e2e": "cd frontend && pnpm run e2e",
+    "dev:backend": "cd backend && composer run-script dev",
+    "test:frontend": "cd frontend && pnpm run test",
+    "cov:frontend": "cd frontend && pnpm run test:coverage",
+    "lint:frontend": "cd frontend && pnpm run lint",
+    "format:frontend": "cd frontend && pnpm run format",
+    "dev:frontend": "cd frontend && pnpm run dev",
+    "dev": "concurrently \"pnpm run dev:backend\" \"pnpm run dev:frontend\"",
+    "install": "concurrently \"cd backend && composer install\" \"cd frontend && pnpm install\"",
+    "test": "concurrently \"pnpm run test:backend\" \"pnpm run test:frontend\"",
+    "postinstall": "lefthook install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "lefthook": "^1.10.1"
+  }
+}

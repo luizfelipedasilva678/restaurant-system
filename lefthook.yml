@@ -1,0 +1,17 @@
+pre-commit:
+  parallel: true
+  commands:
+    backend-style:
+      run: pnpm run format:backend
+    frontend-style:
+      run: pnpm run format:frontend
+    frontend-linter:
+      run: pnpm run lint:frontend
+    backend-linter:
+      run: pnpm run lint:backend
+
+commit-msg:
+  parallel: true
+  scripts:
+    "commitlint.sh":
+      runner: bash

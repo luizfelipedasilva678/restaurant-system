@@ -1,0 +1,5 @@
+.login__form {
+	width: min(600px, 100%);
+	margin: 50px auto;
+	padding: 16px;
+}

@@ -1,0 +1,41 @@
+services:
+  sonarqube:
+    image: sonarqube:lts-community
+    restart: always
+    ports:
+      - 9000:9000
+
+  db:
+    image: mariadb:latest
+    restart: always
+    environment:
+      MARIADB_USER: root
+      MARIADB_ROOT_PASSWORD: root
+      TZ: America/Sao_Paulo
+    volumes:
+      - db:/var/lib/mysql
+      - ./backend/scripts/init-dbs.sh:/docker-entrypoint-initdb.d/init-dbs.sh
+      - ./backend/db:/db
+    ports:
+      - 3306:3306
+    networks:
+      - app
+
+  adminer:
+    environment:
+      TZ: America/Sao_Paulo
+    image: adminer:latest
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    networks:
+      - app
+
+volumes:
+  db:
+
+networks:
+  app:
+    driver: bridge

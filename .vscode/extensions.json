@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "SanderRonde.phpstan-vscode",
+    "bmewburn.vscode-intelephense-client",
+    "junstyle.php-cs-fixer",
+    "Kasik96.latte",
+    "biomejs.biome"
+  ]
+}

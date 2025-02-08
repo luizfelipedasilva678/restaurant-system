@@ -1,0 +1,11 @@
+parameters:
+  level: max
+  paths:
+    - src
+  ignoreErrors: 
+    - 
+      identifier: missingType.generics 
+    -
+      identifier: parameter.defaultValue
+    -
+      identifier: foreach.nonIterable

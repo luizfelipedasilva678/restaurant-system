@@ -351,6 +351,11 @@ expected body
 
 Currently only the body above is accepted.
 
+## Authors
+
+- [Luiz Felipe](https://github.com/luizfelipedasilva678)
+- [Pedro Henrique](https://github.com/PedroHenrique-git)
+
 ## References
 
 - SVGREPO. [https://www.svgrepo.com/svg/164649/restaurant-table-and-chairs](https://www.svgrepo.com/svg/164649/restaurant-table-and-chairs)

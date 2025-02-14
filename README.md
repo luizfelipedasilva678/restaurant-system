@@ -35,7 +35,7 @@ scripts can be found in `/backend/db`.
 Together with mariadb, `Adminer` a database manager, will also start
 by default it will start on port 8080.
 
-Note: All employees, items and tables are pre-registered.
+Note: All payment methods, categories, employees, items and tables are pre-registered.
 
 In order to make login, you will need to update the password hash for each employee in the sql script in accordance with your chosen pepper.
 

@@ -85,11 +85,11 @@ To execute the e2e tests run `pnpm run e2e` (obs: Para rodar o teste e2e é nece
 
 ![er](/docs/essential-model.png)
 
-## Partial model for reservation creation flow
+## Partial model for reservation creation
 
 ![er](/docs/partial-diagram-reservation-creation.png)
 
-## Partial model to add consumption to a table flow
+## Partial model to add consumption to a table
 
 ![er](/docs/partial-diagram-consumptions.png)
 

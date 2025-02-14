@@ -4,6 +4,8 @@ This project was part of an college assignment where the main goal was to develo
 a system for a restaurant where the user can create reservations and manage the tables
 being attended.
 
+Both Frontend and Backend are using MVP (Model, View, Presenter)
+
 ## Project structure
 
 ### /backend
@@ -32,6 +34,10 @@ scripts can be found in `/backend/db`.
 
 Together with mariadb, `Adminer` a database manager, will also start
 by default it will start on port 8080.
+
+Note: All employees, items and tables are pre-registered.
+
+In order to make login, you will need to update the password hash for each employee in the sql script in accordance with your chosen pepper.
 
 ### Backend
 
